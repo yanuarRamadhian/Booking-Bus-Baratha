@@ -1,0 +1,10 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import './styles/styles.css';
+import './styles/kelas.css';
+import './styles/tentang.css';
+import './styles/purpose.css';
+import './styles/opening.css';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+createRoot(document.getElementById('app')).render(location.pathname.endsWith('/tentang.html') ? <About/> : <Home/>);
