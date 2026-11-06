@@ -6,12 +6,15 @@
   <meta name="theme-color" content="#11110f" />
   <meta name="description" content="Jelajahi trayek, lihat jadwal, dan pilih kursi perjalanan bersama P.O Bus Bharata." />
   <title>P.O Bus Bharata — Perjalanan Berkelas, Warisan Nusantara</title>
+  <script src="opening-init.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="opening.css" />
 </head>
 <body>
+  <div class="opening-overlay" aria-hidden="true"><div class="opening-panel opening-panel-left"><img class="opening-wayang" src="wayang-gate.svg" alt="" /><span class="opening-word">BHA</span><span class="opening-caption">P.O BUS</span></div><div class="opening-panel opening-panel-right"><img class="opening-wayang" src="wayang-gate.svg" alt="" /><span class="opening-word">RATA</span><span class="opening-caption">NUSANTARA</span></div></div>
   <header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="#beranda" aria-label="P.O Bus Bharata, kembali ke beranda">
@@ -57,5 +60,6 @@
 
   <div id="booking-modal" class="modal" hidden><div class="modal-backdrop" data-close></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" data-close aria-label="Tutup">×</button><div id="modal-content"></div></div></div>
   <script src="app.js"></script>
+  <script src="opening.js"></script>
 </body>
 </html>
