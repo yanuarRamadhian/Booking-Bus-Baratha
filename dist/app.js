@@ -7,7 +7,7 @@ const routes = [
 const classes = [
   {id:'executive',name:'Executive',seat:'Reclining seat',layout:'2 + 2',rows:10,letters:['A','B',null,'C','D'],capacity:40,multiplier:1,features:'AC · Reclining seat · USB'},
   {id:'super',name:'Super Executive',seat:'Leg rest',layout:'2 + 1',rows:10,letters:['A','B',null,'C'],capacity:30,multiplier:1.35,features:'AC · Leg rest · USB'},
-  {id:'royal',name:'Royal Premium',seat:'Sleeper',layout:'1 + 1',rows:10,letters:['A',null,'B'],capacity:20,multiplier:1.85,features:'AC · Sleeper · USB'}
+  {id:'royal',name:'Royal Executive',seat:'Sleeper',layout:'1 + 1',rows:10,letters:['A',null,'B'],capacity:20,multiplier:1.85,features:'AC · Sleeper · USB'}
 ];
 const sharedFacilities = 'Toilet khusus BAK · Smoking room · Dispenser air panas gratis';
 const trips = routes.flatMap(([from,to,hours,basePrice], index) => classes.flatMap((busClass,classIndex) => [
