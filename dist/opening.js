@@ -9,7 +9,7 @@
     finish();
     return;
   }
-  try { sessionStorage.setItem('bharata-opening-seen', '1'); } catch {}
+  try { sessionStorage.setItem('bharata-opening-logo-v2-seen', '1'); } catch {}
   overlay.addEventListener('animationend', event => { if (event.target === overlay) finish(); });
   window.setTimeout(finish, 3500);
 })();
